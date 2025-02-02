@@ -1,13 +1,11 @@
-"use client";
-import React from "react";
+import React from 'react'
+import Hero from './components/hero'
 
-export default function App() {
+
+const App = () => {
   return (
-    (<div
-      className="flex items-center justify-center h-screen w-screen"
-      >
-        ElectroCon 25
-    </div>)
-  );
+    <Hero/>
+  )
 }
 
+export default App
