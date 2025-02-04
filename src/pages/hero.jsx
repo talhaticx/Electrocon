@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
-import { Spotlight } from "./A-ui/spotlight-new";
+import { Spotlight } from "../ui/spotlight-new";
 import GridLines from "react-gridlines";
+import Button from "../components/buttons";
 
 export default function Hero() {
   return (
@@ -15,7 +16,7 @@ export default function Hero() {
     >
       <div className="h-screen w-screen  flex md:items-center md:justify-center bg-black/[0.70] antialiased bg-grid-white/[0.02] relative overflow-hidden">
         <Spotlight duration={15} />
-        <div className=" p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0">
+        <div className=" p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0 flex flex-col">
           <h1 className="text-4xl md:text-7xl TitleFontCustom text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
             Electrocon 25
           </h1>
@@ -26,6 +27,13 @@ export default function Hero() {
             Technical Event Organazied by IET on Campus UET Lahore. Modules like
             Coding Competitions, Gaming and Robo War.
           </p>
+          <div className="flex justify-center mt-4">
+
+          {/* <button className="mt-4 w-max shadow-[inset_0_0_0_2px_#616467] text-black px-12 py-4 rounded-full tracking-widest uppercase font-bold bg-transparent hover:bg-[#616467] hover:text-white dark:text-neutral-200 transition duration-200">
+            Playlist
+          </button> */}
+          <Button text={"Sign Up"} />
+          </div>
         </div>
       </div>
     </GridLines>
