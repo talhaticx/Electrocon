@@ -1,5 +1,5 @@
 import React from "react";
-import Hero from "./pages/hero";
+import Welcome from "./pages/welcome";
 import Home from "./pages/home";
 
 import { Routes, Route } from "react-router-dom";
@@ -7,7 +7,7 @@ import { Routes, Route } from "react-router-dom";
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<Hero />} />
+      <Route path="/" element={<Welcome />} />
       <Route path="/home" element={<Home />} />
     </Routes>
   );
