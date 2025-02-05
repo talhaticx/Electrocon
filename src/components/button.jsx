@@ -24,8 +24,8 @@ const Button = ({text="Use Text Here Bro", path="/"}) => {
 
 const StyledWrapper = styled.div`
   .button {
-    color: '#A546BA'
-    font-size: 12px,
+    color: #A546BA;
+    font-size: 12px;
     line-height: 1;
     text-decoration: none;
     display: inline-flex;
@@ -33,8 +33,8 @@ const StyledWrapper = styled.div`
     cursor: pointer;
     align-items: center;
     gap: 0.75rem;
-    background-color: rgba(0,0,0, 0.6);
-    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0,0,0,0.9);
+    // color: rgba(255, 255, 255, 0.8);
     border-radius: 10rem;
     font-weight: 550;
     padding: 0.5rem 1rem;

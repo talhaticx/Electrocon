@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 
-export default function FloatingImage({ src, alt, width=200 }) {
+export default function FloatingImage({ src, alt, className = "", width = 200 }) {
   return (
-    <div className="flex items-center justify-center h-screen">
+    <div className="flex items-center justify-center ">
       <motion.img
-        width={width}
         src={src}
         alt={alt}
-        className="object-cover drop-shadow-lg"
+        width={width}
+        className={`object-cover drop-shadow-lg ${className}`}
         animate={{ y: [0, -20, 0] }}
         transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
       />
