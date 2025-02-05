@@ -6,7 +6,7 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+
   background-color: #242424;
 
   font-synthesis: none;
@@ -44,4 +44,33 @@ button {
   font-optical-sizing: auto;
   font-weight: 900;
   font-style: normal;
+}
+
+.econPurpleDark {
+  color: #54274E !important;
+}
+.econPurpleLight {
+  color: #A546BA !important;
+}
+.econGrey {
+  color: #BFC1C3 !important;
+}
+.econBlack {
+  color: #242424;
+}
+
+.bgeconPurpleDark{
+  background-color: #54274E;
+}
+
+.bgeconPurpleLight{
+  background-color: #A546BA;
+}
+
+.bgeconGrey{
+  background-color: #BFC1C3;
+}
+
+.bgeconBlack{
+  background-color: #242424;
 }
