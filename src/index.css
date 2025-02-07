@@ -7,7 +7,7 @@
 
   color-scheme: light dark;
 
-  background-color: #242424;
+  background-color: #0e0e0e;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -27,11 +27,14 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #000;
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-family: "DM Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
 }
 
 button {
@@ -73,4 +76,22 @@ button {
 
 .bgeconBlack{
   background-color: #242424;
+}
+
+::-webkit-scrollbar {
+  width: 2px; 
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #54274E;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A546BA;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #0e0e0e;
 }
