@@ -2,6 +2,8 @@ import React from "react";
 import Welcome from "./pages/welcome";
 import Home from "./pages/home";
 
+import "./App.css";
+
 import { Routes, Route } from "react-router-dom";
 
 const App = () => {
