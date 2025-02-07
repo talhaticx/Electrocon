@@ -1,15 +1,30 @@
-import React from 'react'
-import Hero from '../components/hero'
-import Navbar from '../components/navbar'
+import React from "react";
+import Hero from "../sections/hero";
+import TimerSection from "../sections/timerSection";
+import { TracingBeam } from "../ui/tracing-beam";
+
+import { ECON, ECON_INTRODUCTION } from "../data/econ";
 
 const Home = () => {
   return (
     <>
-    <section style={{background:"#000"}} className='overflow-x-hidden'>
+      <div style={{ background: "#000" }} className=" overflow-y-hidden">
         <Hero />
-    </section>
-    </>
-  )
-}
+        <div className="w-full px-3">
+          <TracingBeam>
+            <TimerSection />
 
-export default Home
+            <h1 className="text-white text-4xl font-bold mt-16">
+              About {ECON}
+            </h1>
+            <p className="text-white text-lg mt-4">
+              {ECON_INTRODUCTION}
+              </p>
+          </TracingBeam>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Home;

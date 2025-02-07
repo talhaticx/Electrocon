@@ -1,15 +1,14 @@
 "use client";
-import { TypewriterEffect } from "../ui/typewriter-effect";
-import { COLORS } from "./../lib/constants";
-import FloatingImage from "./floatingImage";
-import Navbar from "./navbar";
+import { TypewriterEffect } from "./../ui/typewriter-effect";
+import FloatingImage from "./../components/floatingImage";
+import Navbar from "./../components/navbar";
 
 export default function Hero() {
   const words = [
     { text: "Wait ", ClassName: "econGrey" },
     { text: "is " },
     { text: "over, " },
-    { text: "Electrocon-25", className: "econPurpleLight" },
+    { text: "ElectroCON’25", className: "econPurpleLight" },
     { text: "is " },
     { text: "here." },
   ];
